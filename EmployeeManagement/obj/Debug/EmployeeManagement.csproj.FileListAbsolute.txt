@@ -1,0 +1,14 @@
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\bin\Debug\EmployeeManagement.exe.config
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\bin\Debug\EmployeeManagement.exe
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\bin\Debug\EmployeeManagement.pdb
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.AssemblyReference.cache
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.SuggestedBindingRedirects.cache
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.Employees.resources
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.Login.resources
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.Properties.Resources.resources
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.GenerateResource.cache
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.CoreCompileInputs.cache
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.exe
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.pdb
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.Departments.resources
+C:\khanh\vs\test\5 window form app employeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.Salaries.resources
