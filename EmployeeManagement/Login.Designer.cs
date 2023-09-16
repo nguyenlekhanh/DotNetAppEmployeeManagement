@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,9 +42,6 @@
             this.LoginBtn = new System.Windows.Forms.Button();
             this.ResetLbl = new System.Windows.Forms.Label();
             this.exit = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -57,6 +57,39 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 380);
             this.panel1.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(43, 196);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(116, 25);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "SQL Server";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(54, 156);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(78, 25);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "C# .Net";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(36, 114);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(135, 25);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Employee MS";
             // 
             // label1
             // 
@@ -96,6 +129,7 @@
             this.UNameTb.Name = "UNameTb";
             this.UNameTb.Size = new System.Drawing.Size(288, 30);
             this.UNameTb.TabIndex = 4;
+            this.UNameTb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.UNameTb_KeyPress);
             // 
             // PasswordTb
             // 
@@ -105,6 +139,7 @@
             this.PasswordTb.Size = new System.Drawing.Size(287, 30);
             this.PasswordTb.TabIndex = 5;
             this.PasswordTb.UseSystemPasswordChar = true;
+            this.PasswordTb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PasswordTb_KeyPress);
             // 
             // pictureBox2
             // 
@@ -149,39 +184,6 @@
             this.exit.TabIndex = 10;
             this.exit.Text = "X";
             this.exit.Click += new System.EventHandler(this.exit_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(36, 114);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 25);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Employee MS";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(54, 156);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 25);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "C# .Net";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(43, 196);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 25);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "SQL Server";
             // 
             // Login
             // 

@@ -25,17 +25,19 @@ namespace EmployeeManagement
             PasswordTb.Text = "";
         }
 
-        private void LoginBtn_Click(object sender, EventArgs e)
+        private void checkLogin()
         {
-            if(UNameTb.Text == "" || PasswordTb.Text == "")
+            if (UNameTb.Text == "" || PasswordTb.Text == "")
             {
                 MessageBox.Show("Missing Data!!!");
-            } else if(UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
+            }
+            else if (UNameTb.Text == "Admin" && PasswordTb.Text == "Password")
             {
                 Departments db = new Departments();
                 db.Show();
                 this.Hide();
-            } else
+            }
+            else
             {
                 MessageBox.Show("Wrong Username Or Password!!");
                 UNameTb.Text = "";
@@ -43,9 +45,31 @@ namespace EmployeeManagement
             }
         }
 
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+            checkLogin();
+        }
+
         private void exit_Click(object sender, EventArgs e)
         {
             Con.Exit();
+        }
+
+        private void PasswordTb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            if (e.KeyChar == (char)13)
+            {
+                checkLogin();
+            }
+        }
+
+        private void UNameTb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                checkLogin();
+            }
         }
     }
 }

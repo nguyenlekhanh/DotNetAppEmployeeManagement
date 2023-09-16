@@ -265,5 +265,26 @@ namespace EmployeeManagement
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void EmployeeLbl_Click(object sender, EventArgs e)
+        {
+            Employees Obj = new Employees();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void DepartmentLbl_Click(object sender, EventArgs e)
+        {
+            Departments Obj = new Departments();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void LogoutLbl_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }

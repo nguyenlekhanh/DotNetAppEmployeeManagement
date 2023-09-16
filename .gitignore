@@ -2,8 +2,12 @@
 #
 .DS_Store
 
-.vs
-EmployeeManagement/bin
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
 
 build/
 .idea

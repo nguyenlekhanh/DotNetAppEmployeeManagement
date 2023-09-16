@@ -185,5 +185,26 @@ namespace EmployeeManagement
                 }
             }
         }
+
+        private void DepartmentLbl_Click(object sender, EventArgs e)
+        {
+            Departments Obj = new Departments();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void SalaryLbl_Click(object sender, EventArgs e)
+        {
+            Salaries Obj = new Salaries();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void LogoutLbl_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }

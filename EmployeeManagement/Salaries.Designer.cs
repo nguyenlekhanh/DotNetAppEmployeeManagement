@@ -42,13 +42,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.EmpCb = new System.Windows.Forms.ComboBox();
             this.DaysTb = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.LogoutLbl = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.SalaryLbl = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.DepartmentLbl = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.EmployeeLbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.SalaryList = new System.Windows.Forms.DataGridView();
@@ -206,16 +206,17 @@
             this.DaysTb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DaysTb_KeyPress);
             this.DaysTb.Validated += new System.EventHandler(this.DaysTb_Validated);
             // 
-            // label12
+            // LogoutLbl
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label12.ForeColor = System.Drawing.Color.Teal;
-            this.label12.Location = new System.Drawing.Point(973, 116);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 24);
-            this.label12.TabIndex = 52;
-            this.label12.Text = "Logout";
+            this.LogoutLbl.AutoSize = true;
+            this.LogoutLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.LogoutLbl.ForeColor = System.Drawing.Color.Teal;
+            this.LogoutLbl.Location = new System.Drawing.Point(973, 116);
+            this.LogoutLbl.Name = "LogoutLbl";
+            this.LogoutLbl.Size = new System.Drawing.Size(68, 24);
+            this.LogoutLbl.TabIndex = 52;
+            this.LogoutLbl.Text = "Logout";
+            this.LogoutLbl.Click += new System.EventHandler(this.LogoutLbl_Click);
             // 
             // pictureBox5
             // 
@@ -227,16 +228,16 @@
             this.pictureBox5.TabIndex = 51;
             this.pictureBox5.TabStop = false;
             // 
-            // label11
+            // SalaryLbl
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label11.ForeColor = System.Drawing.Color.Teal;
-            this.label11.Location = new System.Drawing.Point(823, 116);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 24);
-            this.label11.TabIndex = 50;
-            this.label11.Text = "Salary";
+            this.SalaryLbl.AutoSize = true;
+            this.SalaryLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.SalaryLbl.ForeColor = System.Drawing.Color.Teal;
+            this.SalaryLbl.Location = new System.Drawing.Point(823, 116);
+            this.SalaryLbl.Name = "SalaryLbl";
+            this.SalaryLbl.Size = new System.Drawing.Size(61, 24);
+            this.SalaryLbl.TabIndex = 50;
+            this.SalaryLbl.Text = "Salary";
             // 
             // pictureBox4
             // 
@@ -248,16 +249,17 @@
             this.pictureBox4.TabIndex = 49;
             this.pictureBox4.TabStop = false;
             // 
-            // label10
+            // DepartmentLbl
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label10.ForeColor = System.Drawing.Color.Teal;
-            this.label10.Location = new System.Drawing.Point(624, 116);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(116, 24);
-            this.label10.TabIndex = 48;
-            this.label10.Text = "Departments";
+            this.DepartmentLbl.AutoSize = true;
+            this.DepartmentLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.DepartmentLbl.ForeColor = System.Drawing.Color.Teal;
+            this.DepartmentLbl.Location = new System.Drawing.Point(624, 116);
+            this.DepartmentLbl.Name = "DepartmentLbl";
+            this.DepartmentLbl.Size = new System.Drawing.Size(116, 24);
+            this.DepartmentLbl.TabIndex = 48;
+            this.DepartmentLbl.Text = "Departments";
+            this.DepartmentLbl.Click += new System.EventHandler(this.DepartmentLbl_Click);
             // 
             // pictureBox3
             // 
@@ -269,16 +271,17 @@
             this.pictureBox3.TabIndex = 47;
             this.pictureBox3.TabStop = false;
             // 
-            // label9
+            // EmployeeLbl
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.label9.ForeColor = System.Drawing.Color.Teal;
-            this.label9.Location = new System.Drawing.Point(445, 116);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 24);
-            this.label9.TabIndex = 46;
-            this.label9.Text = "Employee";
+            this.EmployeeLbl.AutoSize = true;
+            this.EmployeeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.EmployeeLbl.ForeColor = System.Drawing.Color.Teal;
+            this.EmployeeLbl.Location = new System.Drawing.Point(445, 116);
+            this.EmployeeLbl.Name = "EmployeeLbl";
+            this.EmployeeLbl.Size = new System.Drawing.Size(96, 24);
+            this.EmployeeLbl.TabIndex = 46;
+            this.EmployeeLbl.Text = "Employee";
+            this.EmployeeLbl.Click += new System.EventHandler(this.EmployeeLbl_Click);
             // 
             // pictureBox1
             // 
@@ -357,13 +360,13 @@
             this.Controls.Add(this.AmountTb);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.SalaryList);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.LogoutLbl);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.SalaryLbl);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.DepartmentLbl);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.EmployeeLbl);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.DaysTb);
@@ -412,13 +415,13 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox EmpCb;
         private System.Windows.Forms.TextBox DaysTb;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label LogoutLbl;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label SalaryLbl;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label DepartmentLbl;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label EmployeeLbl;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView SalaryList;
