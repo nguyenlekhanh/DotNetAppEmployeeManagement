@@ -28,6 +28,7 @@ namespace EmployeeManagement
                 return true;
             } catch (Exception ex)
             {
+                //TODO Log to Database
                 return false;
             }
         }

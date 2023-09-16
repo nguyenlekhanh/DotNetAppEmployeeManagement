@@ -54,6 +54,7 @@
             this.SalaryList = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.AmountTb = new System.Windows.Forms.TextBox();
+            this.DeleteBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -75,6 +76,7 @@
             this.UpdateBtn.TabIndex = 41;
             this.UpdateBtn.Text = "UPDATE";
             this.UpdateBtn.UseVisualStyleBackColor = false;
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
             // 
             // AddBtn
             // 
@@ -308,6 +310,8 @@
             this.SalaryList.RowTemplate.Height = 24;
             this.SalaryList.Size = new System.Drawing.Size(785, 382);
             this.SalaryList.TabIndex = 53;
+            this.SalaryList.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SalaryList_CellClick);
+            this.SalaryList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SalaryList_CellContentClick);
             // 
             // label13
             // 
@@ -329,12 +333,27 @@
             this.AmountTb.Size = new System.Drawing.Size(288, 30);
             this.AmountTb.TabIndex = 57;
             // 
+            // DeleteBtn
+            // 
+            this.DeleteBtn.BackColor = System.Drawing.Color.Teal;
+            this.DeleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.DeleteBtn.ForeColor = System.Drawing.Color.White;
+            this.DeleteBtn.Location = new System.Drawing.Point(87, 543);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(125, 41);
+            this.DeleteBtn.TabIndex = 58;
+            this.DeleteBtn.Text = "DELETE";
+            this.DeleteBtn.UseVisualStyleBackColor = false;
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
+            // 
             // Salaries
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1144, 702);
+            this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.AmountTb);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.SalaryList);
@@ -405,5 +424,6 @@
         private System.Windows.Forms.DataGridView SalaryList;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox AmountTb;
+        private System.Windows.Forms.Button DeleteBtn;
     }
 }

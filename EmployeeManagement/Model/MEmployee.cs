@@ -47,7 +47,7 @@ namespace EmployeeManagement.Model
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                //TODO Log to Database
                 return false;
             }
         }
