@@ -200,6 +200,9 @@
             this.DaysTb.Name = "DaysTb";
             this.DaysTb.Size = new System.Drawing.Size(288, 30);
             this.DaysTb.TabIndex = 43;
+            this.DaysTb.TextChanged += new System.EventHandler(this.DaysTb_TextChanged);
+            this.DaysTb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DaysTb_KeyPress);
+            this.DaysTb.Validated += new System.EventHandler(this.DaysTb_Validated);
             // 
             // label12
             // 
@@ -319,6 +322,7 @@
             // 
             // AmountTb
             // 
+            this.AmountTb.Enabled = false;
             this.AmountTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.AmountTb.Location = new System.Drawing.Point(10, 447);
             this.AmountTb.Name = "AmountTb";

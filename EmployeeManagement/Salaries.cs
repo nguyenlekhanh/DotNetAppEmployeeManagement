@@ -25,11 +25,19 @@ namespace EmployeeManagement
             mSalary = new MSalary();
             ShowSalaries();
             GetEmployees();
+            SetMyCustomFormat();
         }
 
         private void ResetField()
         {
             
+        }
+
+        public void SetMyCustomFormat()
+        {
+            // Set the Format type and the CustomFormat string.
+            PeriodDtp.Format = DateTimePickerFormat.Custom;
+            PeriodDtp.CustomFormat = "MM/yyyy";
         }
 
         private void ShowSalaries()
@@ -96,6 +104,54 @@ namespace EmployeeManagement
         private void EmpCb_SelectedIndexChanged(object sender, EventArgs e)
         {
             GetSalary();
+        }
+
+        private void DaysTb_TextChanged(object sender, EventArgs e)
+        {
+
+            //if (Convert.ToInt32(DaysTb.Text) >= 300 && Convert.ToInt32(DaysTb.Text) <= 470)
+            //{
+            //    DaysTb.Text = string.Empty;
+            //}
+        }
+
+        private void DaysTb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                
+            }
+        }
+
+
+        private void DaysTb_Validated(object sender, EventArgs e)
+        {
+            if(DaysTb.TextLength > 0) {
+                try
+                {
+                    int number = Convert.ToInt32(DaysTb.Text);
+                    if (number < 0)
+                    {
+                        DaysTb.Text = "0";
+                    }
+                    else if (number > 31)
+                    {
+                        DaysTb.Text = "31";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    DaysTb.Text = "0";
+                }
+                GetSalary();
+            }
         }
     }
 }
